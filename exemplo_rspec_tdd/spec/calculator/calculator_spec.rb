@@ -1,6 +1,7 @@
 require 'calculator'
 
-describe Calculator, "About Calculator" do
+RSpec.describe Calculator, "About Calculator" do
+# describe Calculator, "About Calculator" do
 # describe 'Class Calculator' do
 
     subject(:calc) { described_class.new() }
@@ -10,6 +11,10 @@ describe Calculator, "About Calculator" do
         it 'divide by 0' do
             # expect{calc.div(3, 0)}.to raise_exception
             expect{calc.div(3, 0)}.to raise_error(ZeroDivisionError)
+            expect{calc.div(3, 0)}.to raise_error("divided by 0")
+            expect{calc.div(3, 0)}.to raise_error(ZeroDivisionError, "divided by 0")
+            expect{calc.div(3, 0)}.to raise_error(/divided/)
+            
         end
     end
 
