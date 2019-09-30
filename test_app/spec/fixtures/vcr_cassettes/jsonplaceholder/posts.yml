@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<API-URL>/todos/2"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 29 Sep 2019 13:29:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d87dd6b0626320dd6ba8cf06a3b86f4421569763752; expires=Mon, 28-Sep-20
+        13:29:12 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, max-age=14400
+      Pragma:
+      - no-cache
+      Expires:
+      - Sun, 29 Sep 2019 17:29:12 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"63-+s0zIP5ZEQN9hypVJUneLybJ+L0"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '2734'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51de4dfb5bd3d01c-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 1,
+          "id": 2,
+          "title": "quis ut nam facilis et officia qui",
+          "completed": false
+        }
+    http_version: 
+  recorded_at: Sun, 29 Sep 2019 13:29:12 GMT
+- request:
+    method: get
+    uri: "<API-URL>/todos/3"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 29 Sep 2019 13:50:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d15756bfccdcb44fb66dab7d9a7c8c1e51569765018; expires=Mon, 28-Sep-20
+        13:50:18 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, max-age=14400
+      Pragma:
+      - no-cache
+      Expires:
+      - Sun, 29 Sep 2019 17:50:18 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"54-J3JtLgWuXjgj1OZdyAcKAqOaKHo"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - REVALIDATED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51de6ce43cc04b61-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 1,
+          "id": 3,
+          "title": "fugiat veniam minus",
+          "completed": false
+        }
+    http_version: 
+  recorded_at: Sun, 29 Sep 2019 13:50:18 GMT
+recorded_with: VCR 5.0.0

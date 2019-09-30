@@ -1,0 +1,3995 @@
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-28 22:07:33.924206"], ["updated_at", "2019-09-28 22:07:33.924206"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+name { "Mrs. Johnnie MacGyver" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+email { "je.rogahn@herzogbashirian.io" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:4)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+name { "Freida Barrows" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+email { "pete@frami.info" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:4)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-28 23:21:04.612198"], ["updated_at", "2019-09-28 23:21:04.612198"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+name { "Miss Jerrell Quigley" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+email { "arnetta_wiegand@hegmann.biz" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:7)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:8)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:12)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:13)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+name { "Charity Beahan" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+email { "salvador_batz@kovacekrohan.info" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:7)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:8)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:12)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:13)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-29 00:22:46.615137"], ["updated_at", "2019-09-29 00:22:46.615137"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:5)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+name { "Rene Turner" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:8)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+email { "shandra_gutmann@parker.io" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:9)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:12)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:13)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:17)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:18)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-29 01:18:01.410002"], ["updated_at", "2019-09-29 01:18:01.410002"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:5)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+name { "Millard McClure" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:8)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+email { "floy@lang.io" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:9)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:12)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:16)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:20)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:21)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:25)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:26)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-29 01:28:21.498342"], ["updated_at", "2019-09-29 01:28:21.498342"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:49)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:53)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:57)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:58)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:62)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:63)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:49)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:53)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:57)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:58)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:62)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:63)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:49)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:53)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:57)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:58)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:62)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customer.rb:63)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20190929111807)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "customer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3dad120da9"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_orders_on_customer_id" ON "orders" ("customer_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190929111807"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-29 11:31:42.844828"], ["updated_at", "2019-09-29 11:31:42.844828"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:50)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:54)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:58)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:63)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "gender" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20190929111807)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "customer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3dad120da9"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_orders_on_customer_id" ON "orders" ("customer_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190929111807"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-29 12:23:39.540739"], ["updated_at", "2019-09-29 12:23:39.540739"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Home, Outdoors & Tools" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Small Granite Computer" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 48.44 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20190928220421)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "vip" boolean, "days_to_pay" integer, "gender" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928220421"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20190929111807)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "customer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3dad120da9"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_orders_on_customer_id" ON "orders" ("customer_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190929111807"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20190929191935)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190929191935"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20190929192033)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "price" decimal, "category_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_products_on_category_id" ON "products" ("category_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190929192033"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-29 19:36:07.518435"], ["updated_at", "2019-09-29 19:36:07.518435"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_products_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_products_on_category_id' AND type='index'
+[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Electronics" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Gorgeous Wooden Clock" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 55.43 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Books, Shoes & Garden" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Durable Wool Watch" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 92.98 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Outdoors & Automotive" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Lightweight Wool Keyboard" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 83.92 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Books" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Durable Granite Wallet" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 41.7 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Grocery, Shoes & Games" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Intelligent Marble Plate" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 62.46 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Health" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Gorgeous Silk Lamp" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 12.69 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Garden, Books & Computers" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Enormous Steel Shoes" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 9.16 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Jewelry & Health" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Small Wooden Bottle" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 70.56 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Jewelry, Electronics & Clothing" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Enormous Aluminum Knife" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 29.4 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Health" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Durable Wooden Keyboard" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 78.46 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Music & Industrial" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Fantastic Paper Shoes" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 69.61 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Sports" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Heavy Duty Leather Coat" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 52.5 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateMembers (20190930102831)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190930102831"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_products_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_products_on_category_id' AND type='index'
+[0m
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Computers & Games" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/categories.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+upcased { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:39)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+qtt_orders { 3 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:40)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "M" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:51)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+gender { "F" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:55)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { true }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:59)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 30 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:60)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+vip { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:64)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+days_to_pay { 15 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/customers.rb:65)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+password { "123456" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/members.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+password_confirmation { "123456" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/members.rb:5)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+description { "Lightweight Plastic Shirt" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+price { 30.71 }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <top (required)> at /home/adriano/Cursos/Udemy/TDD-Ruby-RSpec/test_app/spec/factories/products.rb:4)
