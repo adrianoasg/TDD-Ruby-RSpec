@@ -1,6 +1,9 @@
 # Webmock gem
 require 'webmock/rspec'
 
+# JsonMatchers
+require "json_matchers/rspec"
+
 # VCR config
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
@@ -27,6 +30,8 @@ end
 RSpec.configure do |config|
 
   config.order = "random"
+
+  JsonMatchers.schema_root = "spec/support/api/schemas"
 
   # FactoryBot Lint
   config.before(:suite) do
